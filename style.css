@@ -1,0 +1,542 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*estilo geral  */
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: "Poppins", serif;
+}
+
+body {
+   background-color: black;
+   height: 100vh;
+}
+
+.interface {
+   max-width: 1280px;
+   margin: auto;
+
+}
+
+
+.flex {
+   display: flex;
+   /*   <!-- e uma clasee jeral para trabalhar com elas em outras seçoes-->*/
+}
+
+
+
+.btn-contato button {
+   /* tirei o button, coloquei em estilo gerais, assim todos os que tiver com mesmo nome tem o mesmo estilo*/
+
+   padding: 10px 40px;
+   font-size: 18px;
+   border-radius: 40px;
+   background-color: rgb(0, 132, 255);
+   font-weight: 600;
+   border: 0;
+   cursor: pointer;
+   transition: .2s;
+}
+
+h2.titulo {
+
+   color: aliceblue;
+   font-size: 40px;
+   text-align: center;
+   /* centralizar o texto*/
+}
+
+h2.titulo span {
+   color: rgb(0, 132, 255);
+
+
+}
+
+
+button:hover,
+form .btn-enviar input:hover {
+   /* lembra na hora de anotar que tirei butyon do heder e coloquei em estilos gerais*/
+
+   box-shadow: 0 0 10px rgb(140, 192, 240);
+   transform: scale(1.05);
+   color: rgb(255, 255, 255);
+
+}
+
+/*  estilo do cabeçario*/
+
+
+header {
+
+   padding: 40px 4%;
+}
+
+header>.interface {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+header a {
+   color: rgb(163, 163, 163);
+   text-decoration: none;
+   display: inline-block;
+   transition: 0.05s;
+   font-size: 25px;
+
+}
+
+header a:hover {
+   color: aliceblue;
+   transform: scale(1.05);
+}
+
+
+header nav ul {
+   list-style-type: none;
+}
+
+header nav ul li {
+   display: inline-block;
+   padding: 0 40px;
+
+}
+
+
+
+
+
+
+
+
+/*estilo do topo site-- segunda parte titulo ,paragrafo, e imagem */
+
+
+section.topo-do-site {
+
+   padding: 40px 4%;
+   /* desse jeito quando diminuir a tela nao fica grudado */
+
+
+}
+
+section.topo-do-site .flex {
+   /* classe flex posso trabalhar com ela/ ir no bloco que etou trabalhando e ela etiver dentro da section estilizaçao exclusva*/
+   align-items: center;
+   justify-content: center;
+   gap: 90px;
+
+
+
+}
+
+
+.topo-do-site .txt-topo-site h1 {
+   color: rgb(255, 240, 240);
+   font-size: 42px;
+   line-height: 40px;
+}
+
+
+.topo-do-site span {
+   color: rgb(0, 132, 255);
+}
+
+.topo-do-site .txt-topo-site p {
+   color: rgb(255, 240, 240);
+   margin: 40px 0;
+   /*  colocar distancia quando tiver grudado um no outro*/
+}
+
+
+.topo-do-site .img-topo-site img {
+
+   position: relative;
+   animation: flutuar 2s ease-in-out infinite alternate;
+
+
+
+
+}
+
+
+
+
+@keyframes flutuar {
+   0% {
+      top: 0;
+   }
+
+   100% {
+      top: 30px;
+   }
+}
+
+
+/* bloco estilo das especialidades   parte 3*/
+
+section.especialidade {
+
+   padding: 40px 4%;
+
+}
+
+
+section.especialidade .flex {
+   /* chamou a classe flex que esta dentro de (section.especialidade) aplicou gap*/
+
+   gap: 60px;
+}
+
+.especialidade .especialidades-box {
+
+   color: rgb(255, 240, 240);
+   padding: 40px;
+   /* da espacamento*/
+   transition: 1s;
+   border-radius: 20px;
+   margin-top: 50px;
+}
+
+
+.especialidade .especialidades-box:hover {
+   transform: scale(1.05);
+   box-shadow: 0 0 8px rgba(255, 255, 255, 0.475);
+   /* sombreamento*/
+}
+
+.especialidade .especialidades-box i {
+
+   font-size: 70px;
+   color: rgb(0, 132, 255);
+}
+
+.especialidade .especialidades-box h3 {
+
+   font-size: 28px;
+   margin: 15px 0
+      /*espacamento do incone e titulo*/
+   ;
+}
+
+/* PARTE 4  ESTILO DO SOBRE MIN*/
+
+section.sobre {
+   padding: 80px 4%;
+}
+
+section.sobre .flex {
+   align-items: center;
+   gap: 60px;
+}
+
+.sobre .txt-sobre {
+   color: rgb(255, 255, 255);
+}
+
+
+.sobre .txt-sobre h2 {
+
+   font-size: 40px;
+   line-height: 40px;
+   margin-bottom: 30px;
+}
+
+.sobre .txt-sobre h2 span {
+
+   color: rgb(0, 132, 255);
+   display: block;
+
+}
+
+
+.sobre .txt-sobre p {
+   margin: 20px 0;
+   text-align: justify;
+}
+
+.btn-social button {
+   /* na parte de rodape ou footer pra estilizar tirou o sobre e o tex-sobre*/
+
+   width: 60px;
+   height: 60px;
+   border-radius: 50%;
+   /*  deixar o elementos redondos = deixar na metade wudth e heigth valores*/
+   background-color: rgb(0, 132, 255);
+   font: 22px;
+   cursor: pointer;
+   margin: 0 10px;
+   /* nao deixar grudado as bordas do lemento*/
+   transition: 0.5s;
+}
+
+/* ESTILO DO PORTIFOLIO 5 PARTE DO PROJETO*/
+
+section.portfolio {
+
+
+   padding: 80px 4%;
+   box-shadow: 0 0 20px 10px rgb(0, 132, 255);
+
+}
+
+
+section.portfolio .flex {
+
+   justify-content: space-around;
+   margin-top: 80px;
+}
+
+/*------------------------------------------------------------------colocar imagem pra  rolar quando passa o mouse efeito de rolagemm-----------------------------------------------------*/
+.img-port {
+   width: 360px;
+   height: 460px;
+
+   background-size: cover;
+   /* imagem se adapita ao tamanho da div*/
+   background-position: 100% 0%;
+   transition: 5s;
+   border-radius: 30px;
+   cursor: pointer;
+   position: relative;
+   /* presisa ser relative pro ovelay funciona*/
+
+}
+
+.img-port:hover {
+
+   background-position: 100% 100%;
+
+}
+
+.overlay {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.479);
+   border-radius: 30px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 25px;
+   font-weight: 600;
+   color: rgb(242, 245, 247);
+   opacity: 0;
+   transition: 0.5;
+}
+
+.overlay:hover {
+   opacity: 1;
+}
+
+
+/* ESTILO DO FORMULARIO DE CONTATO  PARTE 6*/
+
+
+
+
+section.formulario {
+   padding: 80PX 4%;
+}
+
+
+form {
+   max-width: 500px;
+   margin: auto;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   gap: 10px;
+   margin-top: 40px;
+}
+
+
+form input,
+form textarea {
+   width: 100%;
+   background-color: rgba(170, 170, 170, 0.368);
+   border: 0;
+   outline: 0;
+   padding: 20px 15px;
+   border-radius: 40px;
+   color: aliceblue;
+
+}
+
+
+form textarea {
+   resize: none;
+}
+
+
+form .btn-enviar {
+   margin-top: 20px;
+   text-align: center;
+
+}
+
+form .btn-enviar input {
+   /* copiei e coloquei em estilos gerais acrecentei o hover*/
+   width: 160px;
+   background-color: rgb(0, 132, 255);
+   color: rgb(241, 233, 233);
+   font-weight: 1000px;
+   cursor: pointer;
+   transition: 0.5s;
+}
+
+
+/* ESTILO DO RODAPE 7 PARTE*/
+
+footer {
+   padding: 60px 4%;
+   box-shadow: 0 0 40px 10px rgb(0, 132, 255);
+}
+
+footer .flex {
+   justify-content: space-between;
+}
+
+
+footer .line-footer {
+   padding: 20px 0;
+
+}
+
+.borda {
+   border-top: 2px solid rgb(0, 132, 255);
+}
+
+footer .line-footer p i {
+   color: rgb(0, 132, 255);
+   font-size: 22px;
+}
+
+footer .line-footer p a {
+   color: rgb(255, 255, 255);
+   text-decoration: none;
+}
+
+
+.motor1,
+.motor2,
+.motor3 {
+   border: 6px solid rgb(0, 132, 255);
+   border-radius: 5px;
+}
+
+.imgapresentando {
+   border: none;
+   border-radius: 80px;
+   box-shadow: 5px 6px 5px 5px rgba(5, 125, 236, 0.884);
+   ;
+}
+
+
+
+@media screen and (max-width: 1172px) {
+   /*classes gerais*/
+
+   .flex {
+
+      flex-direction: column;
+   }
+
+
+   /*cabeçario*/
+
+   .topo-do-site .txt-topo-site p {
+      color: rgb(255, 240, 240);
+      margin: 1px 0;
+      /*  colocar distancia quando tiver grudado um no outro*/
+   }
+
+   .menu-desktop,
+   .btn-contato {
+      display: none;
+   }
+   .logo-principal{
+
+      padding: 10px 10%;
+      margin: 1px 0;
+   }
+   .loogo-cabeçario{
+      display: none;
+   }
+
+   /*too-do-site*/
+
+   .logogrande{
+      width: 500px;
+      margin: 5px 0;
+     
+   }
+
+   section.topo-do-site {
+
+      padding: 10px 10%;
+      /* desse jeito quando diminuir a tela nao fica grudado */
+
+
+   }
+
+   /* especialidade*/
+   section.especialidade {
+
+      padding: 10px 10%;
+
+   }
+
+
+   /* PARTE 4  ESTILO DO SOBRE MIN*/
+
+section.sobre {
+  
+   padding: 10px 10%;
+   
+}
+.btn-social{
+   text-align: center;
+}
+  
+
+.imgapresentando {
+   width: 400px;
+   padding: 10px 10%;
+   border: none;
+   border-radius: none;
+   box-shadow: none;
+   ;
+}
+
+
+section.portfolio {
+
+
+   padding: 10px   10% ;
+   box-shadow: 0 0 20px 10px rgb(0, 132, 255);
+
+   
+
+}
+
+section.portfolio .flex {
+
+   justify-content: space-around;
+   margin-top: 100px;
+   flex-direction: column-reverse;
+   gap: 40px;
+}
+
+
+.img-port {
+   width: 100%;
+   max-width: 360px;
+}
+
+}
