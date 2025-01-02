@@ -88,7 +88,7 @@ header a {
 
 }
 
-header a:hover {
+header nav.menu-celular a:hover {
    color: aliceblue;
    transform: scale(1.05);
 }
@@ -98,12 +98,88 @@ header nav ul {
    list-style-type: none;
 }
 
-header nav ul li {
+header nav.menu-celular ul li {
    display: inline-block;
    padding: 0 40px;
 
 }
 
+/*  estilo do menu pra celular*/
+
+.btn-abri-menu i{
+   color: rgb(13, 143, 230); ;
+   font-size: 55px;
+}
+
+.menu-celular{
+
+   background: rgba(0, 0, 0, 0.897);
+   height: 100vh;
+   position: fixed;
+   top: 0;
+   right: 0;
+   z-index: 99999;
+   width: 0%;
+   overflow: hidden;
+   transition: .2s;
+}
+
+.menu-celular.abrindo-menu{
+
+   width: 65%;
+}
+
+
+.menu-celular.abrindo-menu ~ .overley-menu-celula{
+
+   display: block;
+
+}
+
+
+.menu-celular .btn-fechar{
+   padding: 23px 6%;
+}
+
+
+.menu-celular .btn-fechar i{
+
+   color:rgb(13, 143, 230); 
+   font-size: 40px;
+   padding: 23px 6%;
+
+
+}
+
+.menu-celular nav ul{
+   text-align: right;
+}
+
+.menu-celular nav ul li a{
+
+   color: aliceblue;
+   font-size: 20px;
+   font-weight: 300;
+   padding: 20px 5%;
+   display: block;
+
+}
+
+.menu-celular nav ul li a:hover{
+   background-color: rgb(13, 143, 230);
+   border-radius: 15px;
+}
+   .overley-menu{
+
+      background-color: rgb(212, 0, 0);
+      width: 100%;
+      right: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 88888;
+      display: none;
+   }
 
 
 
@@ -527,7 +603,7 @@ section.sobre {
 section.portfolio {
 
 
-   padding: 10px   10% ;
+   padding: 10px   6% ;
    box-shadow: 0 0 20px 10px rgb(0, 132, 255);
 
    
