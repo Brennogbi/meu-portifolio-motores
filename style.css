@@ -527,9 +527,14 @@ footer .line-footer p a {
 
    /*cabeçario*/
 
+   .topo-do-site .flex{
+
+      flex-direction: column-reverse;
+   }
+
    .topo-do-site .txt-topo-site p {
       color: rgb(255, 240, 240);
-     
+   
       padding: 10px 10%;
       /*  colocar distancia quando tiver grudado um no outro*/
    }
@@ -542,10 +547,9 @@ footer .line-footer p a {
 
       padding: 10px 10%;
       margin: 1px 0;
-   }
-   .loogo-cabeçario{
       display: none;
    }
+   
 
    /*too-do-site*/
 
@@ -555,13 +559,17 @@ footer .line-footer p a {
       font-size: 17px;
    }
    .logogrande{
-      width: 300px;
+      width: 400px;
       margin: 5px 0;
       align-items: center;
+      
      
    }
+   
 
-   section.topo-do-site {
+   section.topo-do-site .flex {
+      gap: 2px;
+      font-size: 16px;
 
       padding: 10px 10%;
       /* desse jeito quando diminuir a tela nao fica grudado */
@@ -570,19 +578,31 @@ footer .line-footer p a {
    }
 
    /* especialidade*/
-   section.especialidade {
 
-      padding: 10px 10%;
+   .especialidades-box  p{
+     
+      display: none;
 
    }
+
+   
+   
+
+  
+  
+
+   .motor1{
+      display: none;
+   }
+
 
 
    /* PARTE 4  ESTILO DO SOBRE MIN*/
 
-section.sobre {
-  
+section.sobre .flex {
+ 
    padding: 10px 10%;
-   
+    
 }
 .btn-social{
    text-align: center;
@@ -597,6 +617,14 @@ section.sobre {
    box-shadow: none;
    ;
    align-items: center;
+   
+}
+section.txt-sobre .flex{
+
+
+  
+
+
 }
 
 
@@ -614,7 +642,7 @@ section.portfolio .flex {
 
    justify-content: space-around;
    margin-top: 100px;
-   flex-direction: column-reverse;
+   
    gap: 40px;
 }
 
