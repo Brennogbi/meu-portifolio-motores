@@ -445,6 +445,7 @@ footer .line-footer p a {
    .flex {
 
       flex-direction: column;
+      padding: 10px 10%;
    }
 
 
@@ -474,6 +475,7 @@ footer .line-footer p a {
    .logogrande{
       width: 500px;
       margin: 5px 0;
+      align-items: center;
      
    }
 
