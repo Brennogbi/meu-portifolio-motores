@@ -444,7 +444,7 @@ footer .line-footer p a {
 
    .flex {
 
-      flex-direction: column;
+      flex-direction: column-reverse;
       padding: 10px 10%;
    }
 
