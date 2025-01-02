@@ -453,7 +453,8 @@ footer .line-footer p a {
 
    .topo-do-site .txt-topo-site p {
       color: rgb(255, 240, 240);
-      margin: 1px 0;
+     
+      padding: 10px 10%;
       /*  colocar distancia quando tiver grudado um no outro*/
    }
 
