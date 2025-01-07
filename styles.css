@@ -1,0 +1,126 @@
+/* Reset Básico */
+body, h1, h2, p, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilização Geral */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Título da Página */
+.titulo-pagina {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.retorno{
+    flex-direction: row;
+    margin-left: 50px;
+    color: azure;
+    font-weight: 800;
+   font-size: 30px;
+}
+/* Container de Produtos */
+.container-produtos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Produto */
+.produto {
+    background: #111;
+    border: 2px solid #0078D7;
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 120, 215, 0.3);
+    transition: transform 0.3s;
+}
+
+.produto:hover {
+    transform: scale(1.05);
+}
+
+/* Imagem do Produto */
+.imagem-produto img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.input-imagem {
+    margin-top: 10px;
+}
+
+/* Informações do Produto */
+.info-produto {
+    padding: 15px;
+}
+
+.info-produto h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.info-produto p {
+    font-size: 0.9em;
+    margin: 5px 0;
+    color: #ccc;
+}
+
+.preco {
+    font-size: 1.2em;
+    color: #27ae60;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+/* Botão de Contato */
+.btn-contato {
+    background-color: #0078D7;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-contato:hover {
+    background-color: #005bb5;
+    transform: scale(1.1);
+}
+
+/* Botão Editar Discreto */
+.admin-panel {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+#editar-produtos {
+    background-color: transparent;
+    color: #0078D7;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container-produtos {
+        flex-direction: column;
+        align-items: center;
+    }
+}

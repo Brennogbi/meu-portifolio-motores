@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Vendas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 class="titulo-pagina">🛍️ Nossos Produtos</h1> <a href="index.html" class="retorno"> voltar pro inicio</a>
+    
+    <div class="container-produtos">
+        <!-- Modelo de Produto (8 no total) -->
+        <div class="produto" data-id="1">
+            <div class="imagem-produto">
+                <img src="https://via.placeholder.com/400x300" alt="Produto 1">
+                <input type="file" class="input-imagem oculto" accept="image/*">
+            </div>
+            <div class="info-produto">
+                <h2 contenteditable="false">Produto 1</h2>
+                <p contenteditable="false">Descrição do Produto 1.</p>
+                <p class="preco" contenteditable="false">R$ 199,99</p>
+                <button class="btn-contato">Entrar em Contato</button>
+            </div>
+        </div>
+
+        <!-- Replicar para mais 7 produtos -->
+        <div class="produto" data-id="2">
+            <div class="imagem-produto">
+                <img src="https://via.placeholder.com/400x300" alt="Produto 2">
+                <input type="file" class="input-imagem oculto" accept="image/*">
+            </div>
+            <div class="info-produto">
+                <h2 contenteditable="false">Produto 2</h2>
+                <p contenteditable="false">Descrição do Produto 2.</p>
+                <p class="preco" contenteditable="false">R$ 299,99</p>
+                <button class="btn-contato">Entrar em Contato</button>
+            </div>
+        </div>
+
+        <!-- Repita para até 8 produtos -->
+    </div>
+
+    <!-- Botão Editar Discreto -->
+    <div class="admin-panel">
+        <button id="editar-produtos">🛡️</button>
+    </div>
+    <button id="salvar-produtos" class="oculto">💾 Salvar Alterações</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
